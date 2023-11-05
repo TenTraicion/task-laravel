@@ -3,7 +3,6 @@
 </h1>
 
 <div>
-  Hello Im a blade template!
   {{-- @if (count($tasks)) --}}
   @forelse ($tasks as $task)
     <div>
