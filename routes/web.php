@@ -73,7 +73,7 @@ Route::get('/', function () use ($tasks) {
 })->name('tasks.index');
 
 Route::get('/{id}', function ($id) {
-    return 'One single task';
+    return 'Task: '.$id.' details';
 })->name('tasks.show');
 
 Route::get('/laravel', function () {
