@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('index', [
+        'name' => 'Laravel 10',
+    ]); 
+});
+
+Route::get('/laravel', function () {
     return view('welcome');  // resources/views/welcome.blade.php
 });
 
